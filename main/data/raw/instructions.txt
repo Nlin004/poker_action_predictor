@@ -1,0 +1,3 @@
+If "raw/" directory is empty, git clone the following repository into it:
+
+git clone https://github.com/uoftcprg/phh-dataset
