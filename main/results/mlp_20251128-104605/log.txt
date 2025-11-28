@@ -1,0 +1,14 @@
+Training run: mlp_20251128-104605
+{
+  "parquet_path": "data/processed/FULL_PHH.parquet",
+  "out_dir": "models/mlp_full",
+  "model": "mlp",
+  "epochs": 25,
+  "batch_size": 512,
+  "lr": 0.0005,
+  "weight_decay": 0.0001,
+  "warmup_epochs": 2,
+  "label_smoothing": 0.1,
+  "gradient_clip": 1.0
+}
+

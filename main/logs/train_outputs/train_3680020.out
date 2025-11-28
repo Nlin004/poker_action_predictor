@@ -1,0 +1,64 @@
+---------------------------------------
+Begin Slurm Prolog: Nov-28-2025 13:32:41
+Job ID:    3680020
+User ID:   nlin47
+Account:   coc
+Job name:  poker_train
+Partition: ice-gpu
+QOS:       coe-ice
+---------------------------------------
+/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Using device: cuda
+Loading data/processed/FULL_PHH_IMPROVED.parquet
+Loaded 267567 rows
+Train: 213338, Val: 54229
+Train: 213338, Val: 54229
+Traceback (most recent call last):
+  File "/storage/ice1/6/9/nlin47/POKER/main/scripts/train_new.py", line 1236, in <module>
+    main()
+  File "/storage/ice1/6/9/nlin47/POKER/main/scripts/train_new.py", line 1168, in main
+    train_loss, train_acc = train_epoch(
+                            ^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/main/scripts/train_new.py", line 839, in train_epoch
+    logits = model(nums, hists)
+             ^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/main/scripts/train_new.py", line 562, in forward
+    num_attended, _ = self.cross_attention(
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/activation.py", line 1488, in forward
+    attn_output, attn_output_weights = F.multi_head_attention_forward(
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 6307, in multi_head_attention_forward
+    q, k, v = _in_projection_packed(query, key, value, in_proj_weight, in_proj_bias)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/functional.py", line 5733, in _in_projection_packed
+    return linear(q, w_q, b_q), linear(k, w_k, b_k), linear(v, w_v, b_v)
+                                ^^^^^^^^^^^^^^^^^^^
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (5120x256 and 128x128)
+---------------------------------------
+Begin Slurm Epilog: Nov-28-2025 13:35:24
+Job ID:        3680020
+User ID:       nlin47
+Account:       coc
+Job name:      poker_train
+Resources:     cpu=1,gres/gpu:h200=1,mem=16G,node=1
+Rsrc Used:     cput=00:02:44,vmem=0,walltime=00:02:44,mem=1933060K,energy_used=0
+Partition:     ice-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-03-017-16-0
+---------------------------------------

@@ -1,0 +1,66 @@
+---------------------------------------
+Begin Slurm Prolog: Nov-27-2025 22:16:18
+Job ID:    3676793
+User ID:   nlin47
+Account:   coc
+Job name:  poker_train
+Partition: ice-gpu
+QOS:       coe-ice
+---------------------------------------
+/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Using device: cuda
+Loading data/processed/FULL_PHH.parquet
+Loaded 267567 rows
+Train: 212770, Val: 54797
+Epoch 1/25 lr=0.000250 train_loss=1.2669 train_acc=0.5093 val_loss=1.1959 val_acc=0.5184
+  → New best: 0.5184
+Epoch 2/25 lr=0.000500 train_loss=1.1924 train_acc=0.5369 val_loss=1.1529 val_acc=0.5709
+  → New best: 0.5709
+Epoch 3/25 lr=0.000498 train_loss=1.1513 train_acc=0.5727 val_loss=1.1401 val_acc=0.5924
+  → New best: 0.5924
+Epoch 4/25 lr=0.000491 train_loss=1.1320 train_acc=0.5895 val_loss=1.1125 val_acc=0.6045
+  → New best: 0.6045
+Epoch 5/25 lr=0.000479 train_loss=1.1235 train_acc=0.5969 val_loss=1.1145 val_acc=0.6080
+  → New best: 0.6080
+Epoch 6/25 lr=0.000464 train_loss=1.1181 train_acc=0.6028 val_loss=1.1098 val_acc=0.6129
+  → New best: 0.6129
+Epoch 7/25 lr=0.000444 train_loss=1.1152 train_acc=0.6048 val_loss=1.1041 val_acc=0.6150
+  → New best: 0.6150
+Epoch 8/25 lr=0.000421 train_loss=1.1132 train_acc=0.6065 val_loss=1.1039 val_acc=0.6142
+Epoch 9/25 lr=0.000394 train_loss=1.1113 train_acc=0.6075 val_loss=1.1036 val_acc=0.6170
+  → New best: 0.6170
+Epoch 10/25 lr=0.000365 train_loss=1.1102 train_acc=0.6086 val_loss=1.1061 val_acc=0.6082
+Epoch 11/25 lr=0.000334 train_loss=1.1092 train_acc=0.6096 val_loss=1.1005 val_acc=0.6159
+Epoch 12/25 lr=0.000301 train_loss=1.1085 train_acc=0.6098 val_loss=1.1025 val_acc=0.6134
+Epoch 13/25 lr=0.000267 train_loss=1.1078 train_acc=0.6107 val_loss=1.0988 val_acc=0.6176
+  → New best: 0.6176
+Epoch 14/25 lr=0.000233 train_loss=1.1071 train_acc=0.6105 val_loss=1.1013 val_acc=0.6153
+Epoch 15/25 lr=0.000199 train_loss=1.1064 train_acc=0.6115 val_loss=1.1035 val_acc=0.6103
+Epoch 16/25 lr=0.000166 train_loss=1.1056 train_acc=0.6116 val_loss=1.0980 val_acc=0.6179
+  → New best: 0.6179
+Epoch 17/25 lr=0.000135 train_loss=1.1048 train_acc=0.6119 val_loss=1.0992 val_acc=0.6154
+Epoch 18/25 lr=0.000106 train_loss=1.1044 train_acc=0.6125 val_loss=1.0975 val_acc=0.6175
+Epoch 19/25 lr=0.000079 train_loss=1.1041 train_acc=0.6129 val_loss=1.0978 val_acc=0.6176
+Epoch 20/25 lr=0.000056 train_loss=1.1040 train_acc=0.6131 val_loss=1.0976 val_acc=0.6157
+Epoch 21/25 lr=0.000036 train_loss=1.1034 train_acc=0.6130 val_loss=1.0977 val_acc=0.6160
+Epoch 22/25 lr=0.000021 train_loss=1.1035 train_acc=0.6133 val_loss=1.0971 val_acc=0.6172
+Epoch 23/25 lr=0.000009 train_loss=1.1032 train_acc=0.6138 val_loss=1.0974 val_acc=0.6161
+Epoch 24/25 lr=0.000002 train_loss=1.1029 train_acc=0.6137 val_loss=1.0972 val_acc=0.6175
+Epoch 25/25 lr=0.000000 train_loss=1.1029 train_acc=0.6137 val_loss=1.0972 val_acc=0.6175
+Best val acc: 0.6179
+Saved results to results/transformer_20251127-221806/
+---------------------------------------
+Begin Slurm Epilog: Nov-27-2025 22:30:13
+Job ID:        3676793
+User ID:       nlin47
+Account:       coc
+Job name:      poker_train
+Resources:     cpu=1,gres/gpu:l40s=1,mem=16G,node=1
+Rsrc Used:     cput=00:13:55,vmem=0,walltime=00:13:55,mem=2091876K,energy_used=0
+Partition:     ice-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-03-004-23-0
+---------------------------------------

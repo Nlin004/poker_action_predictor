@@ -1,0 +1,13 @@
+Training run: transformer_20251128-132907
+{
+  "parquet_path": "data/processed/FULL_PHH_IMPROVED.parquet",
+  "out_dir": "models/tranformer3",
+  "model": "transformer",
+  "epochs": 25,
+  "batch_size": 512,
+  "lr": 0.0005,
+  "weight_decay": 0.0001,
+  "warmup_epochs": 2,
+  "mixup": false
+}
+

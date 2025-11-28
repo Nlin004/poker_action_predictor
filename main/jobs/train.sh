@@ -4,16 +4,16 @@
 #SBATCH --gres=gpu:1
 #SBATCH --time=06:00:00
 #SBATCH --mem=16G
-#SBATCH --output=logs/train_%j.out
+#SBATCH --output=logs/train_outputs/train_%j.out
 
 
 source ../.venv/bin/activate
 
-python scripts/train_next_action.py \
-  --mode parquet \
-  --parquet_path data/processed/pluribus1.parquet \
-  --limit_files 1000 \
-  --out_dir models/MLP1 \
-  --model lstm \
+python scripts/train_new.py \
+  --parquet_path data/processed/FULL_PHH_IMPROVED.parquet \
+  --out_dir models/tranformer3 \
+  --model transformer \
   --epochs 25 \
-  --batch_size 512
+  --batch_size 512 \
+  --lr 5e-4 \
+  # --limit_files 5000 \
