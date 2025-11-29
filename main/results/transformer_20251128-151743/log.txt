@@ -10,3 +10,7 @@
   "mixup": false
 }
 
+Epoch 1/25 lr=0.000250 train_loss=nan train_acc=0.5234 val_loss=nan val_acc=0.5302
+Epoch 2/25 lr=0.000500 train_loss=nan train_acc=0.5234 val_loss=nan val_acc=0.5302
+Epoch 3/25 lr=0.000498 train_loss=nan train_acc=0.5234 val_loss=nan val_acc=0.5302
+Epoch 4/25 lr=0.000491 train_loss=nan train_acc=0.5234 val_loss=nan val_acc=0.5302

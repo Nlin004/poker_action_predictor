@@ -1,0 +1,34 @@
+{
+  "parquet_path": "data/processed/FULL_PHH_IMPROVED.parquet",
+  "out_dir": "models/mlp3",
+  "model": "mlp",
+  "epochs": 25,
+  "batch_size": 512,
+  "lr": 0.0005
+}
+
+Epoch 1/25 train_loss=0.9138 train_acc=0.6017 val_loss=0.7990 val_acc=0.6642
+Epoch 2/25 train_loss=0.8065 train_acc=0.6581 val_loss=0.7740 val_acc=0.6676
+Epoch 3/25 train_loss=0.7888 train_acc=0.6626 val_loss=0.7635 val_acc=0.6723
+Epoch 4/25 train_loss=0.7785 train_acc=0.6645 val_loss=0.7576 val_acc=0.6735
+Epoch 5/25 train_loss=0.7734 train_acc=0.6658 val_loss=0.7551 val_acc=0.6720
+Epoch 6/25 train_loss=0.7694 train_acc=0.6663 val_loss=0.7533 val_acc=0.6736
+Epoch 7/25 train_loss=0.7673 train_acc=0.6661 val_loss=0.7503 val_acc=0.6734
+Epoch 8/25 train_loss=0.7639 train_acc=0.6672 val_loss=0.7487 val_acc=0.6731
+Epoch 9/25 train_loss=0.7627 train_acc=0.6667 val_loss=0.7521 val_acc=0.6709
+Epoch 10/25 train_loss=0.7604 train_acc=0.6678 val_loss=0.7459 val_acc=0.6735
+Epoch 11/25 train_loss=0.7586 train_acc=0.6682 val_loss=0.7453 val_acc=0.6732
+Epoch 12/25 train_loss=0.7576 train_acc=0.6683 val_loss=0.7449 val_acc=0.6726
+Epoch 13/25 train_loss=0.7562 train_acc=0.6685 val_loss=0.7445 val_acc=0.6739
+Epoch 14/25 train_loss=0.7556 train_acc=0.6684 val_loss=0.7419 val_acc=0.6737
+Epoch 15/25 train_loss=0.7547 train_acc=0.6687 val_loss=0.7414 val_acc=0.6732
+Epoch 16/25 train_loss=0.7535 train_acc=0.6689 val_loss=0.7420 val_acc=0.6757
+Epoch 17/25 train_loss=0.7531 train_acc=0.6694 val_loss=0.7423 val_acc=0.6741
+Epoch 18/25 train_loss=0.7518 train_acc=0.6692 val_loss=0.7426 val_acc=0.6720
+Epoch 19/25 train_loss=0.7512 train_acc=0.6689 val_loss=0.7388 val_acc=0.6754
+Epoch 20/25 train_loss=0.7512 train_acc=0.6689 val_loss=0.7430 val_acc=0.6749
+Epoch 21/25 train_loss=0.7501 train_acc=0.6693 val_loss=0.7406 val_acc=0.6739
+Epoch 22/25 train_loss=0.7490 train_acc=0.6705 val_loss=0.7395 val_acc=0.6741
+Epoch 23/25 train_loss=0.7498 train_acc=0.6694 val_loss=0.7394 val_acc=0.6748
+Epoch 24/25 train_loss=0.7486 train_acc=0.6707 val_loss=0.7375 val_acc=0.6756
+Epoch 25/25 train_loss=0.7482 train_acc=0.6703 val_loss=0.7374 val_acc=0.6776

@@ -1,0 +1,36 @@
+{
+  "parquet_path": "data/processed/FULL_PHH_IMPROVED.parquet",
+  "out_dir": "models/transformerSanityAgain",
+  "model": "transformer",
+  "epochs": 25,
+  "weight_decay": 0.0001,
+  "warmup_epochs": 2,
+  "batch_size": 512,
+  "lr": 0.0005
+}
+
+Epoch 1/25  |  train_loss=1.0957  |  train_acc=0.3959  |  val_loss=1.0099  |  val_acc=0.4749
+Epoch 2/25  |  train_loss=0.9980  |  train_acc=0.5606  |  val_loss=0.9434  |  val_acc=0.6398
+Epoch 3/25  |  train_loss=0.9472  |  train_acc=0.6128  |  val_loss=0.9245  |  val_acc=0.6234
+Epoch 4/25  |  train_loss=0.9294  |  train_acc=0.6127  |  val_loss=0.9130  |  val_acc=0.6326
+Epoch 5/25  |  train_loss=0.9214  |  train_acc=0.6139  |  val_loss=0.9099  |  val_acc=0.6141
+Epoch 6/25  |  train_loss=0.9157  |  train_acc=0.6146  |  val_loss=0.9053  |  val_acc=0.5804
+Epoch 7/25  |  train_loss=0.9112  |  train_acc=0.6156  |  val_loss=0.9023  |  val_acc=0.6063
+Epoch 8/25  |  train_loss=0.9089  |  train_acc=0.6176  |  val_loss=0.8978  |  val_acc=0.6197
+Epoch 9/25  |  train_loss=0.9070  |  train_acc=0.6170  |  val_loss=0.8975  |  val_acc=0.6228
+Epoch 10/25  |  train_loss=0.9045  |  train_acc=0.6189  |  val_loss=0.8963  |  val_acc=0.6095
+Epoch 11/25  |  train_loss=0.9030  |  train_acc=0.6197  |  val_loss=0.8963  |  val_acc=0.6093
+Epoch 12/25  |  train_loss=0.9020  |  train_acc=0.6197  |  val_loss=0.8949  |  val_acc=0.6274
+Epoch 13/25  |  train_loss=0.9005  |  train_acc=0.6212  |  val_loss=0.8946  |  val_acc=0.6106
+Epoch 14/25  |  train_loss=0.8996  |  train_acc=0.6205  |  val_loss=0.8930  |  val_acc=0.6188
+Epoch 15/25  |  train_loss=0.8989  |  train_acc=0.6215  |  val_loss=0.8928  |  val_acc=0.6136
+Epoch 16/25  |  train_loss=0.8984  |  train_acc=0.6210  |  val_loss=0.8919  |  val_acc=0.6168
+Epoch 17/25  |  train_loss=0.8973  |  train_acc=0.6225  |  val_loss=0.8912  |  val_acc=0.6209
+Epoch 18/25  |  train_loss=0.8966  |  train_acc=0.6225  |  val_loss=0.8911  |  val_acc=0.6223
+Epoch 19/25  |  train_loss=0.8963  |  train_acc=0.6224  |  val_loss=0.8906  |  val_acc=0.6212
+Epoch 20/25  |  train_loss=0.8964  |  train_acc=0.6225  |  val_loss=0.8903  |  val_acc=0.6195
+Epoch 21/25  |  train_loss=0.8957  |  train_acc=0.6230  |  val_loss=0.8904  |  val_acc=0.6161
+Epoch 22/25  |  train_loss=0.8955  |  train_acc=0.6227  |  val_loss=0.8901  |  val_acc=0.6222
+Epoch 23/25  |  train_loss=0.8950  |  train_acc=0.6244  |  val_loss=0.8900  |  val_acc=0.6204
+Epoch 24/25  |  train_loss=0.8946  |  train_acc=0.6246  |  val_loss=0.8900  |  val_acc=0.6193
+Epoch 25/25  |  train_loss=0.8946  |  train_acc=0.6235  |  val_loss=0.8901  |  val_acc=0.6190

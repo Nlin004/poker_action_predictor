@@ -1,0 +1,9 @@
+{
+  "parquet_path": "data/processed/sanity_check.parquet",
+  "out_dir": "models/mlpSanity1",
+  "model": "mlp",
+  "epochs": 10,
+  "batch_size": 512,
+  "lr": 0.0005
+}
+

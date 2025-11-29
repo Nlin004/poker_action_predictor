@@ -2,8 +2,8 @@ import torch
 import ast
 import re
 import numpy as np
-from train_next_action import (
-    LSTMModel, MLPBaseline, normalize_action_token, parse_phh_file, ACTION_SET
+from train import (
+    TransformerActionModel, ContextualLSTM, MLPBaseline, normalize_action_token, parse_phh_file, ACTION_SET
 )
 
 import argparse

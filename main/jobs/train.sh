@@ -9,9 +9,9 @@
 
 source ../.venv/bin/activate
 
-python scripts/train_new.py \
-  --parquet_path data/processed/FULL_PHH_IMPROVED.parquet \
-  --out_dir models/tranformer3 \
+python scripts/train.py \
+  --parquet_path data/processed/FULL_PHH_IMPROVED2.parquet \
+  --out_dir models/transformerSanityAgain \
   --model transformer \
   --epochs 25 \
   --batch_size 512 \

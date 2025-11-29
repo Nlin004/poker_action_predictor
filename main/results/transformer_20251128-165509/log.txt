@@ -1,0 +1,24 @@
+Training run: transformer_20251128-165509
+{
+  "parquet_path": "data/processed/FULL_PHH_IMPROVED.parquet",
+  "out_dir": "models/tranformer3",
+  "model": "transformer",
+  "epochs": 25,
+  "batch_size": 512,
+  "lr": 0.0005,
+  "weight_decay": 0.0001,
+  "warmup_epochs": 2,
+  "mixup": false
+}
+
+Epoch 1/25 lr=0.000250 train_loss=0.0000 train_acc=0.0681 val_loss=0.0000 val_acc=0.0000
+Epoch 2/25 lr=0.000500 train_loss=0.0000 train_acc=0.0685 val_loss=0.0000 val_acc=0.0000
+Epoch 3/25 lr=0.000498 train_loss=0.0000 train_acc=0.0682 val_loss=0.0000 val_acc=0.0000
+Epoch 4/25 lr=0.000491 train_loss=0.0000 train_acc=0.0679 val_loss=0.0000 val_acc=0.0000
+Epoch 5/25 lr=0.000479 train_loss=0.0000 train_acc=0.0684 val_loss=0.0000 val_acc=0.0000
+Epoch 6/25 lr=0.000464 train_loss=0.0000 train_acc=0.0680 val_loss=0.0000 val_acc=0.0000
+Epoch 7/25 lr=0.000444 train_loss=0.0000 train_acc=0.0685 val_loss=0.0000 val_acc=0.0000
+Epoch 8/25 lr=0.000421 train_loss=0.0000 train_acc=0.0680 val_loss=0.0000 val_acc=0.0000
+Epoch 9/25 lr=0.000394 train_loss=0.0000 train_acc=0.0687 val_loss=0.0000 val_acc=0.0000
+Epoch 10/25 lr=0.000365 train_loss=0.0000 train_acc=0.0686 val_loss=0.0000 val_acc=0.0000
+Epoch 11/25 lr=0.000334 train_loss=0.0000 train_acc=0.0673 val_loss=0.0000 val_acc=0.0000

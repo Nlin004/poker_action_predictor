@@ -1,0 +1,17 @@
+{
+  "parquet_path": "data/processed/FULL_PHH_IMPROVED.parquet",
+  "out_dir": "models/lstmSanityAgain",
+  "model": "lstm",
+  "epochs": 25,
+  "batch_size": 512,
+  "lr": 0.0005
+}
+
+Epoch 1/25 train_loss=2.5436 train_acc=0.1978 val_loss=1.2697 val_acc=0.3317
+Epoch 2/25 train_loss=1.2198 train_acc=0.3275 val_loss=1.1252 val_acc=0.2370
+Epoch 3/25 train_loss=1.0932 train_acc=0.4140 val_loss=1.0660 val_acc=0.5097
+Epoch 4/25 train_loss=1.0510 train_acc=0.5077 val_loss=1.0308 val_acc=0.5277
+Epoch 5/25 train_loss=1.0124 train_acc=0.5442 val_loss=0.9899 val_acc=0.5412
+Epoch 6/25 train_loss=0.9800 train_acc=0.5636 val_loss=0.9667 val_acc=0.5789
+Epoch 7/25 train_loss=0.9590 train_acc=0.5841 val_loss=0.9493 val_acc=0.5802
+Epoch 8/25 train_loss=0.9466 train_acc=0.5991 val_loss=0.9404 val_acc=0.6248

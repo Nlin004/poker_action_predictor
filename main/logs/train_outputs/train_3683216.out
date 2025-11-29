@@ -1,0 +1,66 @@
+---------------------------------------
+Begin Slurm Prolog: Nov-28-2025 22:34:10
+Job ID:    3683216
+User ID:   nlin47
+Account:   coc
+Job name:  poker_train
+Partition: ice-gpu
+QOS:       coe-ice
+---------------------------------------
+/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 1, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Using device: cuda
+Loading data/processed/FULL_PHH_IMPROVED.parquet
+Loaded 267567 rows
+Train: 213338, Val: 54229
+label -> count
+0 111654 0.5234
+1 61028 0.2861
+2 40656 0.1906
+Majority class: 0 freq: 0.5233666763539547
+Val acc if always predict majority: 0.5302144608973058
+Using TransformerActionModel
+/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/transformer.py:515: UserWarning: The PyTorch API of nested tensors is in prototype stage and will change in the near future. We recommend specifying layout=torch.jagged when constructing a nested tensor, as this layout receives active development, has better operator coverage, and works with torch.compile. (Triggered internally at /pytorch/aten/src/ATen/NestedTensorImpl.cpp:178.)
+  output = torch._nested_tensor_from_mask(
+Traceback (most recent call last):
+  File "/storage/ice1/6/9/nlin47/POKER/main/scripts/train_new.py", line 1766, in <module>
+    main2()
+  File "/storage/ice1/6/9/nlin47/POKER/main/scripts/train_new.py", line 1713, in main2
+    val_loss, val_acc, _, _ = eval_model(model, val_loader, crit, device)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/main/scripts/train_new.py", line 1014, in eval_model
+    logits = model(nums, hists)
+             ^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/main/scripts/train_new.py", line 683, in forward
+    enc = self.transformer(x, src_key_padding_mask=key_padding_mask)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/ice1/6/9/nlin47/POKER/.venv/lib/python3.12/site-packages/torch/nn/modules/transformer.py", line 532, in forward
+    output = output.to_padded_tensor(0.0, src.size())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: to_padded_tensor: at least one constituent tensor should have non-zero numel
+---------------------------------------
+Begin Slurm Epilog: Nov-28-2025 22:37:23
+Job ID:        3683216
+User ID:       nlin47
+Account:       coc
+Job name:      poker_train
+Resources:     cpu=1,gres/gpu:rtx_6000=1,mem=16G,node=1
+Rsrc Used:     cput=00:03:12,vmem=0,walltime=00:03:12,mem=2187268K,energy_used=0
+Partition:     ice-gpu
+QOS:           coe-ice
+Nodes:         atl1-1-01-005-7-0
+---------------------------------------

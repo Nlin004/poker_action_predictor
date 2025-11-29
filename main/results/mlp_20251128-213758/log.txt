@@ -1,0 +1,19 @@
+{
+  "parquet_path": "data/processed/sanity_check.parquet",
+  "out_dir": "models/mlpSanity1",
+  "model": "mlp",
+  "epochs": 10,
+  "batch_size": 512,
+  "lr": 0.0005
+}
+
+Epoch 1/10 train_loss=1.2825 train_acc=0.3411 val_loss=1.1551 val_acc=0.2848
+Epoch 2/10 train_loss=1.1511 train_acc=0.3210 val_loss=1.1151 val_acc=0.4848
+Epoch 3/10 train_loss=1.0987 train_acc=0.4522 val_loss=1.0876 val_acc=0.3280
+Epoch 4/10 train_loss=1.0839 train_acc=0.4374 val_loss=1.0803 val_acc=0.5302
+Epoch 5/10 train_loss=1.0581 train_acc=0.4954 val_loss=1.0447 val_acc=0.5368
+Epoch 6/10 train_loss=1.0358 train_acc=0.5036 val_loss=1.0252 val_acc=0.4576
+Epoch 7/10 train_loss=1.0194 train_acc=0.5120 val_loss=1.0100 val_acc=0.5839
+Epoch 8/10 train_loss=1.0079 train_acc=0.5304 val_loss=1.0349 val_acc=0.5158
+Epoch 9/10 train_loss=0.9993 train_acc=0.5263 val_loss=0.9885 val_acc=0.5557
+Epoch 10/10 train_loss=0.9878 train_acc=0.5474 val_loss=0.9816 val_acc=0.5091
